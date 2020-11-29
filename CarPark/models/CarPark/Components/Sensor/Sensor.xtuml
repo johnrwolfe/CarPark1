@@ -1,0 +1,70 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
+	'Sensor',
+	1,
+	'Sensor',
+	'Device to detect the presence of the vehicle. It used to detect the presence of the car prior entering the car park, hence enabling the ticket button. It is also used to detect the entrance of the car then sends a signal to lower the boom.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_BATTR
+	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_ATTR
+	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
+	"00000000-0000-0000-0000-000000000000",
+	'Stand',
+	'The place where the sensor is installed.
+',
+	'',
+	'Stand',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_BATTR
+	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_ATTR
+	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
+	"08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
+	'Status',
+	'The vehicle status detected by the sensors.
+',
+	'',
+	'Status',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_ID
+	VALUES (1,
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_ID
+	VALUES (2,
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO PE_PE
+	VALUES ("a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
+	1,
+	"41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	'Components',
+	'',
+	0,
+	'../Components.xtuml');

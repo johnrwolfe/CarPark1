@@ -1,0 +1,128 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("abf44062-5612-49b4-a45b-627ecdbff52f",
+	'Ticket',
+	2,
+	'Ticket',
+	'Small piece of paper that is issued once the ticket button is pressed. The ticket contains ticket number, car entry date and time
+',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"00000000-0000-0000-0000-000000000000",
+	'TicketID',
+	'A unique number represents the ID of the issued ticket.
+',
+	'',
+	'TicketID',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("e0487da9-d262-49bf-b0ab-552565b59539",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("e0487da9-d262-49bf-b0ab-552565b59539",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("e0487da9-d262-49bf-b0ab-552565b59539",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
+	'entryDateTime',
+	'The date and time when the ticket was issued.
+',
+	'',
+	'entryDateTime',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000010",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"e0487da9-d262-49bf-b0ab-552565b59539",
+	'Fee',
+	'The required amount to pay for the park in Saudi Riyal.
+',
+	'',
+	'Fee',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"051c3208-0c05-47a9-8f3a-42902f95f035",
+	'IsPaid',
+	'Indicates the status of the payment.
+',
+	'',
+	'IsPaid',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
+	'ExitDeadline',
+	'The exit time of the vehicle from the car park.
+',
+	'',
+	'ExitDeadline',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000010",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ID
+	VALUES (1,
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ID
+	VALUES (2,
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO PE_PE
+	VALUES ("abf44062-5612-49b4-a45b-627ecdbff52f",
+	1,
+	"41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	'Components',
+	'',
+	0,
+	'../Components.xtuml');

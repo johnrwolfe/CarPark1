@@ -1,0 +1,587 @@
+-- root-types-contained: SystemModel_c,PackageableElement_c,DataType_c,CoreDataType_c,UserDataType_c
+-- BP 7.1 content: StreamData syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO S_SYS
+	VALUES (1,
+	'CarPark',
+	1);
+INSERT INTO EP_PKG
+	VALUES (2,
+	1,
+	1,
+	'Components',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (3,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (3,
+	'Sensor',
+	1,
+	'Sensor',
+	'',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (4,
+	3);
+INSERT INTO O_BATTR
+	VALUES (4,
+	3);
+INSERT INTO O_ATTR
+	VALUES (4,
+	3,
+	0,
+	'Stand',
+	'',
+	'',
+	'Stand',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (6,
+	3);
+INSERT INTO O_BATTR
+	VALUES (6,
+	3);
+INSERT INTO O_ATTR
+	VALUES (6,
+	3,
+	4,
+	'Status',
+	'',
+	'',
+	'Status',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	3);
+INSERT INTO O_ID
+	VALUES (1,
+	3);
+INSERT INTO O_ID
+	VALUES (2,
+	3);
+INSERT INTO PE_PE
+	VALUES (7,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (7,
+	'Ticket',
+	2,
+	'Ticket',
+	'',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (8,
+	7);
+INSERT INTO O_BATTR
+	VALUES (8,
+	7);
+INSERT INTO O_ATTR
+	VALUES (8,
+	7,
+	0,
+	'TicketID',
+	'',
+	'',
+	'TicketID',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (9,
+	7);
+INSERT INTO O_BATTR
+	VALUES (9,
+	7);
+INSERT INTO O_ATTR
+	VALUES (9,
+	7,
+	8,
+	'entryDateTime',
+	'',
+	'',
+	'entryDateTime',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (10,
+	7);
+INSERT INTO O_BATTR
+	VALUES (10,
+	7);
+INSERT INTO O_ATTR
+	VALUES (10,
+	7,
+	9,
+	'Fee',
+	'',
+	'',
+	'Fee',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (11,
+	7);
+INSERT INTO O_BATTR
+	VALUES (11,
+	7);
+INSERT INTO O_ATTR
+	VALUES (11,
+	7,
+	10,
+	'IsPaid',
+	'',
+	'',
+	'IsPaid',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (12,
+	7);
+INSERT INTO O_BATTR
+	VALUES (12,
+	7);
+INSERT INTO O_ATTR
+	VALUES (12,
+	7,
+	11,
+	'ExitDeadline',
+	'',
+	'',
+	'ExitDeadline',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	7);
+INSERT INTO O_ID
+	VALUES (1,
+	7);
+INSERT INTO O_ID
+	VALUES (2,
+	7);
+INSERT INTO PE_PE
+	VALUES (13,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (13,
+	'Boom',
+	3,
+	'Boom',
+	'',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (14,
+	13);
+INSERT INTO O_BATTR
+	VALUES (14,
+	13);
+INSERT INTO O_ATTR
+	VALUES (14,
+	13,
+	0,
+	'Location',
+	'',
+	'',
+	'Location',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES (15,
+	13);
+INSERT INTO O_BATTR
+	VALUES (15,
+	13);
+INSERT INTO O_ATTR
+	VALUES (15,
+	13,
+	14,
+	'Status',
+	'',
+	'',
+	'Status',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	13);
+INSERT INTO O_ID
+	VALUES (1,
+	13);
+INSERT INTO O_ID
+	VALUES (2,
+	13);
+INSERT INTO PE_PE
+	VALUES (16,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (16,
+	'Vehicle',
+	4,
+	'Vehicle',
+	'',
+	0);
+INSERT INTO O_ID
+	VALUES (0,
+	16);
+INSERT INTO O_ID
+	VALUES (1,
+	16);
+INSERT INTO O_ID
+	VALUES (2,
+	16);
+INSERT INTO PE_PE
+	VALUES (17,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (17,
+	'Customer',
+	5,
+	'Customer',
+	'',
+	0);
+INSERT INTO O_ID
+	VALUES (0,
+	17);
+INSERT INTO O_ID
+	VALUES (1,
+	17);
+INSERT INTO O_ID
+	VALUES (2,
+	17);
+INSERT INTO PE_PE
+	VALUES (18,
+	1,
+	2,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (18,
+	'Alarm',
+	6,
+	'Alarm',
+	'',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (19,
+	18);
+INSERT INTO O_BATTR
+	VALUES (19,
+	18);
+INSERT INTO O_ATTR
+	VALUES (19,
+	18,
+	0,
+	'status',
+	'',
+	'',
+	'status',
+	0,
+	5,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	18);
+INSERT INTO O_ID
+	VALUES (1,
+	18);
+INSERT INTO O_ID
+	VALUES (2,
+	18);
+INSERT INTO PE_PE
+	VALUES (20,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (20,
+	0,
+	'void',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (20,
+	0);
+INSERT INTO PE_PE
+	VALUES (21,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (21,
+	0,
+	'boolean',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (21,
+	1);
+INSERT INTO PE_PE
+	VALUES (5,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (5,
+	0,
+	'integer',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (5,
+	2);
+INSERT INTO PE_PE
+	VALUES (22,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (22,
+	0,
+	'real',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (22,
+	3);
+INSERT INTO PE_PE
+	VALUES (23,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (23,
+	0,
+	'string',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (23,
+	4);
+INSERT INTO PE_PE
+	VALUES (24,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (24,
+	0,
+	'unique_id',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (24,
+	5);
+INSERT INTO PE_PE
+	VALUES (25,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (25,
+	0,
+	'state<State_Model>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (25,
+	6);
+INSERT INTO PE_PE
+	VALUES (26,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (26,
+	0,
+	'same_as<Base_Attribute>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (26,
+	7);
+INSERT INTO PE_PE
+	VALUES (27,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (27,
+	0,
+	'inst_ref<Object>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (27,
+	8);
+INSERT INTO PE_PE
+	VALUES (28,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (28,
+	0,
+	'inst_ref_set<Object>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (28,
+	9);
+INSERT INTO PE_PE
+	VALUES (29,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (29,
+	0,
+	'inst<Event>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (29,
+	10);
+INSERT INTO PE_PE
+	VALUES (30,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (30,
+	0,
+	'inst<Mapping>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (30,
+	11);
+INSERT INTO PE_PE
+	VALUES (31,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (31,
+	0,
+	'inst_ref<Mapping>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (31,
+	12);
+INSERT INTO PE_PE
+	VALUES (32,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (32,
+	0,
+	'component_ref',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (32,
+	13);
+INSERT INTO PE_PE
+	VALUES (33,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (33,
+	0,
+	'date',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (33,
+	30,
+	1,
+	'');
+INSERT INTO PE_PE
+	VALUES (34,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (34,
+	0,
+	'inst_ref<Timer>',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (34,
+	31,
+	3,
+	'');
+INSERT INTO PE_PE
+	VALUES (35,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (35,
+	0,
+	'timestamp',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (35,
+	5,
+	2,
+	'');
