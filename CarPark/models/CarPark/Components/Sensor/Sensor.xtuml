@@ -42,9 +42,16 @@ INSERT INTO O_ATTR
 	'',
 	'Status',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000006",
+	"792d08a9-fd28-4fa2-b953-43ce417c9afe",
 	'',
 	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("792d08a9-fd28-4fa2-b953-43ce417c9afe",
+	"00000000-0000-0000-0000-000000000000",
+	'SensorStatus',
+	'',
+	'',
+	'../Datatypes/Datatypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
