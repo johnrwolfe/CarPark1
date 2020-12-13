@@ -32,7 +32,7 @@ INSERT INTO GD_GE
 	"50ca5a3a-e906-40f3-a875-74c13647ea00",
 	52,
 	0,
-	'CarPark::Components::DataTypes::SensorStatus');
+	'CarPark::Components::DataTypes::SensorType');
 INSERT INTO GD_SHP
 	VALUES ("0a06bcd2-0816-4fa7-9815-6140e0e1f0fd");
 INSERT INTO GD_NCS
@@ -194,6 +194,30 @@ INSERT INTO DIM_ELE
 	VALUES ("918f969f-c289-4be6-90ec-349d5158526f",
 	0,
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_GE
+	VALUES ("f2806cf8-5102-45d5-9c8a-023544533a5c",
+	"61bf8325-fd59-4b0f-87b0-4c2920cf7864",
+	"41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	52,
+	0,
+	'CarPark::Components::DataTypes::ButtonStatus');
+INSERT INTO GD_SHP
+	VALUES ("f2806cf8-5102-45d5-9c8a-023544533a5c");
+INSERT INTO GD_NCS
+	VALUES ("f2806cf8-5102-45d5-9c8a-023544533a5c");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"f2806cf8-5102-45d5-9c8a-023544533a5c");
+INSERT INTO DIM_GE
+	VALUES (1540.000000,
+	0.000000,
+	"f2806cf8-5102-45d5-9c8a-023544533a5c",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("f2806cf8-5102-45d5-9c8a-023544533a5c",
+	0,
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_DIA
 	VALUES ("61bf8325-fd59-4b0f-87b0-4c2920cf7864",
 	'',
@@ -204,7 +228,7 @@ INSERT INTO DIM_DIA
 INSERT INTO S_DT
 	VALUES ("50ca5a3a-e906-40f3-a875-74c13647ea00",
 	"00000000-0000-0000-0000-000000000000",
-	'SensorStatus',
+	'SensorType',
 	'',
 	'');
 INSERT INTO S_EDT
@@ -401,6 +425,32 @@ INSERT INTO PE_PE
 	"1f0aacdf-6c80-44b8-8cad-e32a3ba32ce1",
 	"00000000-0000-0000-0000-000000000000",
 	3);
+INSERT INTO S_DT
+	VALUES ("41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	"00000000-0000-0000-0000-000000000000",
+	'ButtonStatus',
+	'',
+	'');
+INSERT INTO S_EDT
+	VALUES ("41e23f15-8af4-42b5-b8cc-bf9968e04b77");
+INSERT INTO S_ENUM
+	VALUES ("63a5cf53-a217-4515-85aa-e4506b7d744d",
+	'Enabled',
+	'',
+	"41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_ENUM
+	VALUES ("8fc41c3b-ba2d-414e-846b-cd8fc44fb562",
+	'Disabled',
+	'',
+	"41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	"63a5cf53-a217-4515-85aa-e4506b7d744d");
+INSERT INTO PE_PE
+	VALUES ("41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	1,
+	"1f0aacdf-6c80-44b8-8cad-e32a3ba32ce1",
+	"00000000-0000-0000-0000-000000000000",
+	3);
 INSERT INTO PE_PE
 	VALUES ("1f0aacdf-6c80-44b8-8cad-e32a3ba32ce1",
 	1,
@@ -412,7 +462,9 @@ INSERT INTO EP_PKG_PROXY
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	'Components',
-	'',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');
 INSERT INTO S_SYS_PROXY

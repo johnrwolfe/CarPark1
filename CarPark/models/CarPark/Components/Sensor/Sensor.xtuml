@@ -45,11 +45,11 @@ INSERT INTO O_ATTR
 	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
 	"08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
-	'Status',
+	'Type',
 	'The vehicle status detected by the sensors.
 ',
 	'',
-	'Status',
+	'Type',
 	0,
 	"50ca5a3a-e906-40f3-a875-74c13647ea00",
 	'',
@@ -57,7 +57,7 @@ INSERT INTO O_ATTR
 INSERT INTO S_DT_PROXY
 	VALUES ("50ca5a3a-e906-40f3-a875-74c13647ea00",
 	"00000000-0000-0000-0000-000000000000",
-	'SensorStatus',
+	'SensorType',
 	'',
 	'',
 	'../DataTypes/DataTypes.xtuml');
@@ -99,6 +99,8 @@ INSERT INTO EP_PKG_PROXY
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	'Components',
-	'',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');

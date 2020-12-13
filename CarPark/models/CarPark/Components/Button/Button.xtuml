@@ -1,0 +1,59 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("159380e3-f2d5-46a0-9726-135834f2f030",
+	'Button',
+	8,
+	'Button',
+	'The button that enables the cutomer to request a ticket.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("1c0d3ebc-1d52-45bd-82f1-15a50c0da883",
+	"159380e3-f2d5-46a0-9726-135834f2f030");
+INSERT INTO O_BATTR
+	VALUES ("1c0d3ebc-1d52-45bd-82f1-15a50c0da883",
+	"159380e3-f2d5-46a0-9726-135834f2f030");
+INSERT INTO O_ATTR
+	VALUES ("1c0d3ebc-1d52-45bd-82f1-15a50c0da883",
+	"159380e3-f2d5-46a0-9726-135834f2f030",
+	"00000000-0000-0000-0000-000000000000",
+	'Status',
+	'',
+	'',
+	'Status',
+	0,
+	"41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	"00000000-0000-0000-0000-000000000000",
+	'ButtonStatus',
+	'',
+	'',
+	'../DataTypes/DataTypes.xtuml');
+INSERT INTO O_ID
+	VALUES (0,
+	"159380e3-f2d5-46a0-9726-135834f2f030");
+INSERT INTO O_ID
+	VALUES (1,
+	"159380e3-f2d5-46a0-9726-135834f2f030");
+INSERT INTO O_ID
+	VALUES (2,
+	"159380e3-f2d5-46a0-9726-135834f2f030");
+INSERT INTO PE_PE
+	VALUES ("159380e3-f2d5-46a0-9726-135834f2f030",
+	1,
+	"41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	'Components',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+-  ',
+	0,
+	'../Components.xtuml');
