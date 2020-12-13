@@ -5,8 +5,7 @@ INSERT INTO O_OBJ
 	'Ticket',
 	2,
 	'Ticket',
-	'Small piece of paper that is issued once the ticket button is pressed. The ticket contains ticket number, car entry date and time
-',
+	'A record contains information about the vehicle entry and exit of the car park. The ticket is initiated once the ticket button is pressed. and issued if the car park is not full.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
@@ -18,11 +17,11 @@ INSERT INTO O_ATTR
 	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"00000000-0000-0000-0000-000000000000",
-	'TicketID',
-	'A unique number represents the ID of the issued ticket.
+	'ID',
+	'An Arbitrary number represents the ID of the issued ticket.
 ',
 	'',
-	'TicketID',
+	'ID',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000005",
 	'',
@@ -39,11 +38,13 @@ INSERT INTO O_ATTR
 	"e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
 	'entryDateTime',
 	'The date and time when the ticket was issued.
+unit: seconds
+origin: start of epoch 
 ',
 	'',
 	'entryDateTime',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000010",
+	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
 INSERT INTO O_NBATTR
@@ -57,7 +58,8 @@ INSERT INTO O_ATTR
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"e0487da9-d262-49bf-b0ab-552565b59539",
 	'Fee',
-	'The required amount to pay for the park in Saudi Riyal.
+	'The required amount to pay for a visit to the  park..
+unit: Saudi Riyal
 ',
 	'',
 	'Fee',
@@ -77,6 +79,7 @@ INSERT INTO O_ATTR
 	"051c3208-0c05-47a9-8f3a-42902f95f035",
 	'IsPaid',
 	'Indicates the status of the payment.
+True when the fee for the stay has been paid; false otherwise.
 ',
 	'',
 	'IsPaid',
@@ -95,14 +98,64 @@ INSERT INTO O_ATTR
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
 	'ExitDeadline',
-	'The exit time of the vehicle from the car park.
+	'The date and time when the car should exit the car park 
+unit: seconds
+origin: start of epoch
 ',
 	'',
 	'ExitDeadline',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000010",
+	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
+INSERT INTO O_NBATTR
+	VALUES ("90c1e138-89b7-4186-b7ad-1b931502f10b",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("90c1e138-89b7-4186-b7ad-1b931502f10b",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("90c1e138-89b7-4186-b7ad-1b931502f10b",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"7597c7f4-308c-482d-afa1-c6f7cda579e3",
+	'ExitDateTime',
+	'The date and time when the car exited the car park 
+unit: seconds
+origin: start of epoch 
+
+',
+	'',
+	'ExitDateTime',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("e65923d4-8870-4592-9194-f197c37f8f66",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_BATTR
+	VALUES ("e65923d4-8870-4592-9194-f197c37f8f66",
+	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_ATTR
+	VALUES ("e65923d4-8870-4592-9194-f197c37f8f66",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	"90c1e138-89b7-4186-b7ad-1b931502f10b",
+	'Status',
+	'Issued once the ticket is printed out; queued if the car park is full
+',
+	'',
+	'Status',
+	0,
+	"23ed86f1-449f-4a24-9ead-66a565a62791",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("23ed86f1-449f-4a24-9ead-66a565a62791",
+	"00000000-0000-0000-0000-000000000000",
+	'TicketStatus',
+	'',
+	'',
+	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"abf44062-5612-49b4-a45b-627ecdbff52f");

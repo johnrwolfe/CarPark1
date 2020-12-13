@@ -24,9 +24,16 @@ INSERT INTO O_ATTR
 	'',
 	'status',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000006",
+	"a9134b57-fab7-4a8e-85a8-81b2949c79f3",
 	'',
 	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("a9134b57-fab7-4a8e-85a8-81b2949c79f3",
+	"00000000-0000-0000-0000-000000000000",
+	'AlarmStatus',
+	'',
+	'',
+	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");

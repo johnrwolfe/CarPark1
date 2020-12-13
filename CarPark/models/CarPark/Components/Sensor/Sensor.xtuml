@@ -5,7 +5,9 @@ INSERT INTO O_OBJ
 	'Sensor',
 	1,
 	'Sensor',
-	'Device to detect the presence of the vehicle. It used to detect the presence of the car prior entering the car park, hence enabling the ticket button. It is also used to detect the entrance of the car then sends a signal to lower the boom.',
+	'Electronic device used to detect the presence of the car prior to entering or exiting the car park.
+In addition to detecting that the vehicle has cleared the entry or the exit boom.
+',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
@@ -23,9 +25,16 @@ INSERT INTO O_ATTR
 	'',
 	'Stand',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000004",
+	"b6e28bb9-f718-450c-8c6d-a9f4bc743851",
 	'',
 	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("b6e28bb9-f718-450c-8c6d-a9f4bc743851",
+	"00000000-0000-0000-0000-000000000000",
+	'SensorStand',
+	'',
+	'',
+	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_NBATTR
 	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
@@ -42,7 +51,32 @@ INSERT INTO O_ATTR
 	'',
 	'Status',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000006",
+	"50ca5a3a-e906-40f3-a875-74c13647ea00",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("50ca5a3a-e906-40f3-a875-74c13647ea00",
+	"00000000-0000-0000-0000-000000000000",
+	'SensorStatus',
+	'',
+	'',
+	'../DataTypes/DataTypes.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("ddb8ef25-9802-41be-b201-d9f74fad71b8",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_BATTR
+	VALUES ("ddb8ef25-9802-41be-b201-d9f74fad71b8",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
+INSERT INTO O_ATTR
+	VALUES ("ddb8ef25-9802-41be-b201-d9f74fad71b8",
+	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
+	"746047c8-8a10-40d5-855c-2e1e1efc902b",
+	'serialNumber',
+	'a unique number that identifies the sensor',
+	'',
+	'serialNumber',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
 INSERT INTO O_ID

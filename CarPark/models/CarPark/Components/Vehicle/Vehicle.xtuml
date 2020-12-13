@@ -5,7 +5,7 @@ INSERT INTO O_OBJ
 	'Vehicle',
 	4,
 	'Vehicle',
-	'Anything that is driven on land, such as a car, truck, or cart.
+	'Anything that is driven on land.
 ',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_ID
