@@ -1,50 +1,43 @@
 -- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
 
 INSERT INTO O_OBJ
-	VALUES ("8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a",
+	VALUES ("64507606-a1ed-4f97-8a12-8273aa9dabb3",
 	'Alarm',
-	6,
+	9,
 	'Alarm',
 	'A sound to alarm the operator about: Exit Deadline Missed and No Ticket Payment.
 ',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
-	VALUES ("7c1e843a-7d63-47ab-97ea-0a9331256ec6",
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");
+	VALUES ("2210ae7e-f029-422b-a0b2-a216b706126a",
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3");
 INSERT INTO O_BATTR
-	VALUES ("7c1e843a-7d63-47ab-97ea-0a9331256ec6",
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");
+	VALUES ("2210ae7e-f029-422b-a0b2-a216b706126a",
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3");
 INSERT INTO O_ATTR
-	VALUES ("7c1e843a-7d63-47ab-97ea-0a9331256ec6",
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a",
+	VALUES ("2210ae7e-f029-422b-a0b2-a216b706126a",
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3",
 	"00000000-0000-0000-0000-000000000000",
-	'status',
+	'Status',
 	'indicates if there is a raised alert in the control room or not.
 ',
 	'',
-	'status',
+	'Status',
 	0,
-	"a9134b57-fab7-4a8e-85a8-81b2949c79f3",
+	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("a9134b57-fab7-4a8e-85a8-81b2949c79f3",
-	"00000000-0000-0000-0000-000000000000",
-	'AlarmStatus',
-	'',
-	'',
-	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3");
 INSERT INTO O_ID
 	VALUES (1,
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3");
 INSERT INTO O_ID
 	VALUES (2,
-	"8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a");
+	"64507606-a1ed-4f97-8a12-8273aa9dabb3");
 INSERT INTO PE_PE
-	VALUES ("8ef2c7ce-7e64-4a23-bc80-649d83a9bd9a",
+	VALUES ("64507606-a1ed-4f97-8a12-8273aa9dabb3",
 	1,
 	"41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"00000000-0000-0000-0000-000000000000",
@@ -53,7 +46,9 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'Components',
-	'',
+	'CarPark',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');

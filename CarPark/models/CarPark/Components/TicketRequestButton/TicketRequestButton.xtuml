@@ -2,9 +2,9 @@
 
 INSERT INTO O_OBJ
 	VALUES ("159380e3-f2d5-46a0-9726-135834f2f030",
-	'Button',
+	'TicketRequestButton',
 	8,
-	'Button',
+	'TicketRequestButton',
 	'The button that enables the cutomer to request a ticket.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
@@ -17,21 +17,14 @@ INSERT INTO O_ATTR
 	VALUES ("1c0d3ebc-1d52-45bd-82f1-15a50c0da883",
 	"159380e3-f2d5-46a0-9726-135834f2f030",
 	"00000000-0000-0000-0000-000000000000",
-	'Status',
+	'Enabled',
 	'',
 	'',
-	'Status',
+	'Enabled',
 	0,
-	"41e23f15-8af4-42b5-b8cc-bf9968e04b77",
+	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("41e23f15-8af4-42b5-b8cc-bf9968e04b77",
-	"00000000-0000-0000-0000-000000000000",
-	'ButtonStatus',
-	'',
-	'',
-	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"159380e3-f2d5-46a0-9726-135834f2f030");
@@ -51,9 +44,9 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'Components',
+	'CarPark',
 	'Assumptions:
 - There will be no history records kept regarding the detection of the vehicales by the sensors.
--  ',
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');

@@ -36,13 +36,13 @@ INSERT INTO O_ATTR
 	VALUES ("e0487da9-d262-49bf-b0ab-552565b59539",
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
-	'entryDateTime',
+	'EntryDateTime',
 	'The date and time when the ticket was issued.
 unit: seconds
 origin: start of epoch 
 ',
 	'',
-	'entryDateTime',
+	'EntryDateTime',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
@@ -98,7 +98,7 @@ INSERT INTO O_ATTR
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"9f0d8664-3349-4cd6-9aef-d45ca7741ca3",
 	'ExitDeadline',
-	'The date and time when the car should exit the car park 
+	'The date and time when the car must exit the car park to avoid incurring an additional fee.
 unit: seconds
 origin: start of epoch
 ',
@@ -155,10 +155,15 @@ INSERT INTO S_DT_PROXY
 	'TicketStatus',
 	'',
 	'',
-	'../DataTypes/DataTypes.xtuml');
+	'../../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
+INSERT INTO O_OIDA
+	VALUES ("e4e0a0d6-66a7-4d73-9536-a668da1eacb4",
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	0,
+	'ID');
 INSERT INTO O_ID
 	VALUES (1,
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
@@ -175,7 +180,9 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'Components',
-	'',
+	'CarPark',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');

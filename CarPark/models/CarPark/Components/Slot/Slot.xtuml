@@ -2,9 +2,9 @@
 
 INSERT INTO O_OBJ
 	VALUES ("a0aab861-a662-4031-aded-38350d076a9e",
-	'Park',
+	'Slot',
 	7,
-	'Park',
+	'Slot',
 	'An area that the car occupies in the carpark. 
 ',
 	"00000000-0000-0000-0000-000000000000");
@@ -37,21 +37,14 @@ INSERT INTO O_ATTR
 	VALUES ("4e87191e-5ac8-4fa6-a45a-f4af65a749b0",
 	"a0aab861-a662-4031-aded-38350d076a9e",
 	"80b458fa-4bf5-4a23-ba57-8aa3bf7e91d0",
-	'Status',
+	'Occupied',
 	'Occupied when the car occupies the park; empty otherwise.',
 	'',
-	'Status',
+	'Occupied',
 	0,
-	"41594d6c-2dfc-4e0c-9209-775e21f20329",
+	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("41594d6c-2dfc-4e0c-9209-775e21f20329",
-	"00000000-0000-0000-0000-000000000000",
-	'ParkStatus',
-	'',
-	'',
-	'../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"a0aab861-a662-4031-aded-38350d076a9e");
@@ -71,7 +64,9 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'Components',
-	'',
+	'CarPark',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
 	0,
 	'../Components.xtuml');
