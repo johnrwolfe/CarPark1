@@ -8,32 +8,6 @@ INSERT INTO O_OBJ
 	'Electronic device used to detect the presence of the vehicle.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
-	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_BATTR
-	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_ATTR
-	VALUES ("08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
-	"00000000-0000-0000-0000-000000000000",
-	'Stand',
-	'The place where the sensor is installed.
-',
-	'',
-	'Stand',
-	0,
-	"b6e28bb9-f718-450c-8c6d-a9f4bc743851",
-	'',
-	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("b6e28bb9-f718-450c-8c6d-a9f4bc743851",
-	"00000000-0000-0000-0000-000000000000",
-	'SensorStand',
-	'',
-	'',
-	'../../DataTypes/DataTypes.xtuml');
-INSERT INTO O_NBATTR
 	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
 INSERT INTO O_BATTR
@@ -42,7 +16,7 @@ INSERT INTO O_BATTR
 INSERT INTO O_ATTR
 	VALUES ("746047c8-8a10-40d5-855c-2e1e1efc902b",
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
-	"08dfb613-1ed3-4e1f-80cc-fe4565ae381e",
+	"00000000-0000-0000-0000-000000000000",
 	'Type',
 	'Represents the sensor''s function in the carpark.',
 	'',
@@ -76,49 +50,6 @@ INSERT INTO O_ATTR
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
-INSERT INTO O_NBATTR
-	VALUES ("e4d169ef-5501-4c74-a58b-e2be6bf6d0b3",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_BATTR
-	VALUES ("e4d169ef-5501-4c74-a58b-e2be6bf6d0b3",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_ATTR
-	VALUES ("e4d169ef-5501-4c74-a58b-e2be6bf6d0b3",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
-	"ddb8ef25-9802-41be-b201-d9f74fad71b8",
-	'Lane',
-	'The lane number where the sensor is installed.',
-	'',
-	'Lane',
-	0,
-	"ba5eda7a-def5-0000-0000-000000000002",
-	'',
-	'');
-INSERT INTO O_NBATTR
-	VALUES ("347e29e0-c7f6-458d-84a3-c32f133a6e55",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_BATTR
-	VALUES ("347e29e0-c7f6-458d-84a3-c32f133a6e55",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
-INSERT INTO O_ATTR
-	VALUES ("347e29e0-c7f6-458d-84a3-c32f133a6e55",
-	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62",
-	"e4d169ef-5501-4c74-a58b-e2be6bf6d0b3",
-	'Location',
-	'The direction where the sensor is installed.',
-	'',
-	'Location',
-	0,
-	"90e0b169-2c73-4da6-adde-fbffa382abb4",
-	'',
-	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("90e0b169-2c73-4da6-adde-fbffa382abb4",
-	"00000000-0000-0000-0000-000000000000",
-	'SensorLocation',
-	'',
-	'',
-	'../../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"a34d5dc0-6fb6-47a2-981d-e3dbd352ee62");
@@ -143,7 +74,7 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'CarPark',
+	'Components',
 	'Assumptions:
 - There will be no history records kept regarding the detection of the vehicales by the sensors.
 - Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',

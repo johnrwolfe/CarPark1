@@ -1,0 +1,104 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	'Stand',
+	10,
+	'Stand',
+	'Located at each entry/exit point containing a button to request a ticket. ',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("152334ad-94ee-4233-bb17-cd104741ee18",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_BATTR
+	VALUES ("152334ad-94ee-4233-bb17-cd104741ee18",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_ATTR
+	VALUES ("152334ad-94ee-4233-bb17-cd104741ee18",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	"00000000-0000-0000-0000-000000000000",
+	'Type',
+	'The function of the stand in the car park. 
+',
+	'',
+	'Type',
+	0,
+	"b6e28bb9-f718-450c-8c6d-a9f4bc743851",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("b6e28bb9-f718-450c-8c6d-a9f4bc743851",
+	"00000000-0000-0000-0000-000000000000",
+	'StandType',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("a66d732c-ddaa-4a83-b935-c575e7ffeee0",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_BATTR
+	VALUES ("a66d732c-ddaa-4a83-b935-c575e7ffeee0",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_ATTR
+	VALUES ("a66d732c-ddaa-4a83-b935-c575e7ffeee0",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	"152334ad-94ee-4233-bb17-cd104741ee18",
+	'Location',
+	'The place where the stand is installed in the car park. 
+',
+	'',
+	'Location',
+	0,
+	"90e0b169-2c73-4da6-adde-fbffa382abb4",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("90e0b169-2c73-4da6-adde-fbffa382abb4",
+	"00000000-0000-0000-0000-000000000000",
+	'Location',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("9381dfdc-f3cd-45db-8782-ce98207ccd96",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_BATTR
+	VALUES ("9381dfdc-f3cd-45db-8782-ce98207ccd96",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_ATTR
+	VALUES ("9381dfdc-f3cd-45db-8782-ce98207ccd96",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	"a66d732c-ddaa-4a83-b935-c575e7ffeee0",
+	'Lane',
+	'A number to identify the lane at the entry/exit point.',
+	'',
+	'Lane',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_ID
+	VALUES (1,
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_ID
+	VALUES (2,
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO PE_PE
+	VALUES ("7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	1,
+	"41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	"2d0d5816-3245-40af-987c-1fd066439af5",
+	'Components',
+	'Assumptions:
+- There will be no history records kept regarding the detection of the vehicales by the sensors.
+- Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
+	0,
+	'../Components.xtuml');

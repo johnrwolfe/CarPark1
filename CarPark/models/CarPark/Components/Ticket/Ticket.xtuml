@@ -18,8 +18,7 @@ INSERT INTO O_ATTR
 	"abf44062-5612-49b4-a45b-627ecdbff52f",
 	"00000000-0000-0000-0000-000000000000",
 	'ID',
-	'An Arbitrary number represents the ID of the issued ticket.
-',
+	'',
 	'',
 	'ID',
 	0,
@@ -180,7 +179,7 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'CarPark',
+	'Components',
 	'Assumptions:
 - There will be no history records kept regarding the detection of the vehicales by the sensors.
 - Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',
