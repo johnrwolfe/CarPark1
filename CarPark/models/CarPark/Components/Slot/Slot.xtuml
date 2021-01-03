@@ -19,8 +19,7 @@ INSERT INTO O_ATTR
 	"a0aab861-a662-4031-aded-38350d076a9e",
 	"00000000-0000-0000-0000-000000000000",
 	'ID',
-	'An Arbitrary number represents the ID of the park.
-',
+	'An arbitrary number identifying the parking slot, this value is visibly displayed at the physical slot.',
 	'',
 	'ID',
 	0,
@@ -37,10 +36,10 @@ INSERT INTO O_ATTR
 	VALUES ("4e87191e-5ac8-4fa6-a45a-f4af65a749b0",
 	"a0aab861-a662-4031-aded-38350d076a9e",
 	"80b458fa-4bf5-4a23-ba57-8aa3bf7e91d0",
-	'Occupied',
-	'Occupied when the car occupies the park; empty otherwise.',
+	'IsOccupied',
+	'Occupied when the car occupies the slot; empty otherwise.',
 	'',
-	'Occupied',
+	'IsOccupied',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
@@ -48,6 +47,11 @@ INSERT INTO O_ATTR
 INSERT INTO O_ID
 	VALUES (0,
 	"a0aab861-a662-4031-aded-38350d076a9e");
+INSERT INTO O_OIDA
+	VALUES ("80b458fa-4bf5-4a23-ba57-8aa3bf7e91d0",
+	"a0aab861-a662-4031-aded-38350d076a9e",
+	0,
+	'ID');
 INSERT INTO O_ID
 	VALUES (1,
 	"a0aab861-a662-4031-aded-38350d076a9e");
@@ -64,7 +68,7 @@ INSERT INTO EP_PKG_PROXY
 	VALUES ("41a87cca-6276-45ff-81f5-b4cd00549b6e",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
 	"2d0d5816-3245-40af-987c-1fd066439af5",
-	'CarPark',
+	'Components',
 	'Assumptions:
 - There will be no history records kept regarding the detection of the vehicales by the sensors.
 - Once the button is pressed the button will be disabled, to prevent requesting multipe tickets for one vehicle.',

@@ -870,7 +870,8 @@ INSERT INTO O_OBJ_PROXY
 	'Stand',
 	10,
 	'Stand',
-	'Located at each entry/exit point containing a button to request a ticket. ',
+	'Represents a physical entry or exit stand within the car park.
+',
 	"00000000-0000-0000-0000-000000000000",
 	'./Stand/Stand.xtuml');
 INSERT INTO PE_PE
@@ -994,7 +995,8 @@ INSERT INTO R_SIMP
 INSERT INTO R_REL
 	VALUES ("8dc92493-0140-4ccb-b6c1-1acbf6bebacb",
 	4,
-	'The ticket is initiated once the TicketRequestButton is pressed and issued from the stand once the car park is not full. It is removed once the driver collects the ticket.',
+	'Established when a Ticket is created and removed when once the driver collectes the ticket.
+',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO R_PART
 	VALUES ("abf44062-5612-49b4-a45b-627ecdbff52f",

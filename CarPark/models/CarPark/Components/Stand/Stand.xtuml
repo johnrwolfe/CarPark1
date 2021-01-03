@@ -5,7 +5,8 @@ INSERT INTO O_OBJ
 	'Stand',
 	10,
 	'Stand',
-	'Located at each entry/exit point containing a button to request a ticket. ',
+	'Represents a physical entry or exit stand within the car park.
+',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("152334ad-94ee-4233-bb17-cd104741ee18",
@@ -80,6 +81,21 @@ INSERT INTO O_ATTR
 INSERT INTO O_ID
 	VALUES (0,
 	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
+INSERT INTO O_OIDA
+	VALUES ("152334ad-94ee-4233-bb17-cd104741ee18",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	0,
+	'Type');
+INSERT INTO O_OIDA
+	VALUES ("a66d732c-ddaa-4a83-b935-c575e7ffeee0",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	0,
+	'Location');
+INSERT INTO O_OIDA
+	VALUES ("9381dfdc-f3cd-45db-8782-ce98207ccd96",
+	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d",
+	0,
+	'Lane');
 INSERT INTO O_ID
 	VALUES (1,
 	"7ed5aaeb-09f7-4129-8553-c2c05f685c7d");
