@@ -46,9 +46,12 @@ origin: start of epoch
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
-INSERT INTO O_NBATTR
+INSERT INTO O_DBATTR
 	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
-	"abf44062-5612-49b4-a45b-627ecdbff52f");
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	'',
+	3,
+	0);
 INSERT INTO O_BATTR
 	VALUES ("051c3208-0c05-47a9-8f3a-42902f95f035",
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
@@ -86,9 +89,12 @@ True when the fee for the stay has been paid; false otherwise.
 	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
-INSERT INTO O_NBATTR
+INSERT INTO O_DBATTR
 	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
-	"abf44062-5612-49b4-a45b-627ecdbff52f");
+	"abf44062-5612-49b4-a45b-627ecdbff52f",
+	'',
+	3,
+	0);
 INSERT INTO O_BATTR
 	VALUES ("7597c7f4-308c-482d-afa1-c6f7cda579e3",
 	"abf44062-5612-49b4-a45b-627ecdbff52f");
