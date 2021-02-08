@@ -157,7 +157,7 @@ INSERT INTO SM_EVT
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	"00000000-0000-0000-0000-000000000000",
 	17,
-	'Return Ticket',
+	'Completed',
 	0,
 	'',
 	'PaymentMachine17',
@@ -1580,7 +1580,9 @@ INSERT INTO SM_ACT
 	VALUES ("addf0e0b-01a8-4659-af42-55fba1f2a859",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'OpenTicketSlot()',
+	'// open ticket slot to allow user to enter ticket
+
+/*OpenTicketSlot()*/',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1594,8 +1596,13 @@ INSERT INTO SM_ACT
 	VALUES ("00398928-dfb9-427c-896d-89fa87f8c666",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'CloseCurrencySlot()
-ReturnMoney(InsertedAmount:real)',
+	'//Close currency slot to prevent the user from inserting more money while the transaction is being canceled. 
+//return inserted amount to the user
+//return ticket  
+
+/*CloseCurrencySlot() 
+ReturnMoney(InsertedAmount:real)
+ReturnTicket() */',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1609,7 +1616,7 @@ INSERT INTO SM_ACT
 	VALUES ("bebf561d-cb08-4cc7-b83a-4a28fdd17bdb",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'',
+	'//check if the machine has available change to return to the user.',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1623,7 +1630,13 @@ INSERT INTO SM_ACT
 	VALUES ("9229a8f8-5939-4906-b2c4-284a6edd029f",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'IsAccepted():boolean',
+	'
+//Reject the inserted currency if it is not money or damaged or not the required currency.
+//return  inserted currency
+//Accept the inserted currency if not damged and the required currancy.
+
+/*IsAccepted():boolean*/
+',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1637,8 +1650,11 @@ INSERT INTO SM_ACT
 	VALUES ("eb5b3378-aa98-4335-bf84-81d328f69e0b",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'CloseCurrencySlot()
-CalculateCurrency(InsertedAmount:real,Fee:real)',
+	'//Close the currency slot to prevent the user form entering more money.
+//CalculateCurrency(InsertedAmount:real,Fee:real)
+//Calculate if the currency is less or eqaul or more than the reqried fee.
+
+/*CloseCurrencySlot()*/',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1652,7 +1668,8 @@ INSERT INTO SM_ACT
 	VALUES ("6f0391a8-1344-44b1-b342-36f6886df6f7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'',
+	'//Show message to the user "no avilable change"
+//Prompt the user to accept overpayment or cancel the transaction then wait for user input',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1666,8 +1683,11 @@ INSERT INTO SM_ACT
 	VALUES ("5e5c89f3-7356-46b7-bdd7-49f28c34cfe7",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'CalculateExitDeadLine()
-PrintOnTicket(ExitDeadLine:integer)',
+	'// Calculate ExitDeadline => Current time + 15 min
+//Print ExitDeadline on the ticket 
+
+/*CalculateExitDeadLine()
+PrintOnTicket(ExitDeadLine:integer)*/',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -1681,10 +1701,15 @@ INSERT INTO SM_ACT
 	VALUES ("ee088f5b-4609-46d3-87c5-107395c797b6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
 	1,
-	'CloseTicketSlot()
+	'//Close ticket slot to prevent the user from inserting more than one ticket until the transaction is completed. 
+//Display the required fee to the user
+//open currency slot to allow the user to enter currency
+// start timer of 30 secends to wait for payment
+
+/*CloseTicketSlot()
 DisplayFee(Fee:real)
 OpenCurrencySlot()
-StartTimer(Sec:integer) ',
+StartTimer(Sec:integer)*/',
 	'',
 	0);
 INSERT INTO SM_TAH
@@ -1739,7 +1764,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("870d8498-da7b-4bee-845f-9e0bd6a6c655",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1823,8 +1848,8 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("f9dee36b-930c-470c-bf9f-0346dd9af116",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
-	'',
+	1,
+	'//return ticket  ',
 	'',
 	0);
 INSERT INTO SM_TAH
@@ -1837,7 +1862,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("74c56136-0253-44ce-8b52-5f09eb6cf22d",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -1851,7 +1876,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("e989d8eb-d2d9-4760-913a-1247bc58d7f6",
 	"9ca5c19c-f232-4fcc-abd0-3e556dc22984",
-	3,
+	1,
 	'',
 	'',
 	0);
@@ -3239,7 +3264,7 @@ INSERT INTO GD_GE
 	"f203a237-6ed2-480e-a3dd-444287c45931",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Print ExitDeadLine::PaymentMachine17: Return Ticket');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Print ExitDeadLine::PaymentMachine17: Completed');
 INSERT INTO GD_CON
 	VALUES ("a1ca8cdd-1971-4918-b7a0-2995b98e4317",
 	"00000000-0000-0000-0000-000000000000");
@@ -3756,7 +3781,7 @@ INSERT INTO GD_GE
 	"e192f6f6-6b72-4280-82e2-827b63377bcb",
 	42,
 	0,
-	'CarPark::Components::PaymentMachine::Instance State Machine::Cancel Transaction::PaymentMachine17: Return Ticket');
+	'CarPark::Components::PaymentMachine::Instance State Machine::Cancel Transaction::PaymentMachine17: Completed');
 INSERT INTO GD_CON
 	VALUES ("64a40a91-591a-461f-b938-558bb4a22341",
 	"00000000-0000-0000-0000-000000000000");
