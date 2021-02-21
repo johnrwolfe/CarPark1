@@ -1237,6 +1237,7 @@ INSERT INTO SM_ACT
 	1,
 	'// open ticket slot to allow user to enter ticket
 
+
 /*OpenTicketSlot()*/',
 	'',
 	0);
